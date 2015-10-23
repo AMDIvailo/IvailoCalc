@@ -7,6 +7,7 @@ using namespace std;
 string command;
 	while(1 == 1)
 	{
+	cout << "Command: ";
 	cin >> command;
 	if(command == "")
 		return 0;
