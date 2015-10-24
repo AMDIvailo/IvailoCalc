@@ -20,6 +20,8 @@ string command;
 				exitTerminal();
 			else if(command == "about")
 				about();
+			else if(command == "calculator" || command == "calc")
+				calculator();
 			else
 				cout << "Wrong command!" << endl; //If command is not declared.
 		}

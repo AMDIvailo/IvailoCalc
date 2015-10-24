@@ -2,3 +2,4 @@
 #include "exit.cpp"
 #include "help.cpp"
 #include "about.cpp"
+#include "calculator.cpp"
