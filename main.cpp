@@ -22,6 +22,8 @@ string command;
 				about();
 			else if(command == "calculator" || command == "calc")
 				calculator();
+			else if(command == "version")
+				version();
 			else
 				cout << "Wrong command!" << endl; //If command is not declared.
 		}
