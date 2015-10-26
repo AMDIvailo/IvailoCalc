@@ -4,6 +4,7 @@ bool calculator()
 {
 	double value1;
 	double value2;
+	double value3; //Only used for third dimension calculations
 	string calccmd;
 	cout << "Calculator mode activated!" << endl;
 	cout << "Enter a calculator command. Type 'Exit' to exit the calculator. Type 'Help' for help." << endl;
@@ -77,9 +78,32 @@ bool calculator()
 			cin.clear();
 			}
 		}
+		else if(calccmd == "triangle-area")
+		{
+		cin >> value1;
+		cin >> value2;
+		cout << "Triangle area: " << (value1 * value2)/2 << endl;
+			if(cin.fail())
+			{
+			cout << "One of the numbers is invalid!" << endl;
+			cin.clear();
+			}
+		}
+		else if(calccmd == "box-area")
+		{
+		cin >> value1;
+		cin >> value2;
+		cin >> value3;
+		cout << "Box area: " << value1 * value2 * value3 << endl;
+			if(cin.fail())
+			{
+			cout << "One of the numbers is invalid!" << endl;
+			cin.clear();
+			}
+		}
 		else if(calccmd == "help")
 		{
-			cout << "Calculator operators: +, -, *, /" << endl;
+			cout << "Calculator operators: +, -, *, /, pow, root" << endl;
 			cout << "Example of calculator usage: If you type: '+ 20 10' the return will be 30, if you type: '- 20 10' the return will be 10." << endl;
 		}
 
