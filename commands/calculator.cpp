@@ -2,8 +2,8 @@
 using namespace std;
 bool calculator()
 {
-	int value1;
-	int value2;
+	double value1;
+	double value2;
 	string calccmd;
 	cout << "Calculator mode activated!" << endl;
 	cout << "Enter a calculator command. Type 'Exit' to exit the calculator. Type 'Help' for help." << endl;
@@ -55,7 +55,6 @@ bool calculator()
 			cin.clear();
 			}
 		}
-
 		else if(calccmd == "^" || calccmd == "pow")
 		{
 		cin >> value1;
@@ -67,7 +66,17 @@ bool calculator()
 			cin.clear();
 			}
 		}
-
+		else if(calccmd == "root")
+		{
+		cin >> value1;
+		cin >> value2;
+		cout << "Result: " << pow(value1, 1/value2) << endl;
+			if(cin.fail())
+			{
+			cout << "One of the numbers is invalid!" << endl;
+			cin.clear();
+			}
+		}
 		else if(calccmd == "help")
 		{
 			cout << "Calculator operators: +, -, *, /" << endl;
@@ -82,3 +91,4 @@ bool calculator()
 		}
 	}
 }
+
