@@ -89,7 +89,7 @@ bool calculator()
 			cin.clear();
 			}
 		}
-		else if(calccmd == "box-area")
+		else if(calccmd == "cube-area")
 		{
 		cin >> value1;
 		cin >> value2;
