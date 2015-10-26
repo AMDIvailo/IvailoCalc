@@ -103,7 +103,7 @@ bool calculator()
 		}
 		else if(calccmd == "help")
 		{
-			cout << "Calculator operators: +, -, *, /, pow, root" << endl;
+			cout << "Calculator operators: +, -, *, /, pow, root, triangle-area, box-area" << endl;
 			cout << "Example of calculator usage: If you type: '+ 20 10' the return will be 30, if you type: '- 20 10' the return will be 10." << endl;
 		}
 
