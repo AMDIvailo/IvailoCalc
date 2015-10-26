@@ -61,6 +61,11 @@ bool calculator()
 		cin >> value1;
 		cin >> value2;
 		cout << "Result: " << pow(value1, value2) << endl;
+			if(cin.fail())
+			{
+			cout << "One of the numbers is invalid!" << endl;
+			cin.clear();
+			}
 		}
 
 		else if(calccmd == "help")
