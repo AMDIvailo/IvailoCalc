@@ -1,15 +1,13 @@
 #include <iostream>
 #include <string>
 #include "commands/commands.cpp"
-#include "scripting/msghandler.cpp"
 int main()
 {
 using namespace std;
 string command;
-msghandler* text;
 	while(1 == 1)
 	{
-	text->print("Command: ", false);
+	cout << "Command: ";
 	cin >> command;
 	if(command == "")
 		return 0;
@@ -27,7 +25,7 @@ msghandler* text;
 			else if(command == "version")
 				version();
 			else
-				text->print("Wrong command!"); //If command is not declared.
+				cout << "Wrong command!" << endl; //If command is not declared.
 		}
 	}
 }
