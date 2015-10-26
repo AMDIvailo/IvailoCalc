@@ -42,6 +42,8 @@ string command;
 					}
 					currtime = 0;
 			}
+			else if(command == "credits")
+				credits();
 			else
 				cout << "Wrong command!" << endl; //If command is not declared.
 		}
