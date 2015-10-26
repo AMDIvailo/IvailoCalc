@@ -5,4 +5,6 @@ void help()
 	std::cout << "*About -- Shows details about the program and license." <<std::endl;
 	std::cout << "*Calculator -- Starts the calculator mode." <<std::endl;
 	std::cout << "*Version -- Shows the version of the MultyTerminal." <<std::endl;
+	std::cout << "*Exit -- Exits the MultyTerminal." <<std::endl;
+	std::cout << "*Timer [time in seconds] -- Starts a timer." <<std::endl;
 }
