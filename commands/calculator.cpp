@@ -1,68 +1,79 @@
+#include <cmath>
+using namespace std;
 bool calculator()
 {
 	int value1;
 	int value2;
-	std::string calccmd;
-	std::cout << "Calculator mode activated!" << std::endl;
-	std::cout << "Enter a calculator command. Type 'Exit' to exit the calculator. Type 'Help' for help." << std::endl;
+	string calccmd;
+	cout << "Calculator mode activated!" << endl;
+	cout << "Enter a calculator command. Type 'Exit' to exit the calculator. Type 'Help' for help." << endl;
 	while(1 == 1)
 	{
-	std::cout << "Calculator command: ";
-	std::cin >> calccmd;
+	cout << "Calculator command: ";
+	cin >> calccmd;
 		if(calccmd == "+")
 		{
-		std::cin >> value1;
-		std::cin >> value2;
-		std::cout << "Result: " << value1 + value2 << std::endl;
-			if(std::cin.fail())
+		cin >> value1;
+		cin >> value2;
+		cout << "Result: " << value1 + value2 << endl;
+			if(cin.fail())
 			{
-			std::cout << "One of the numbers is invalid!" << std::endl;
-			std::cin.clear();
+			cout << "One of the numbers is invalid!" << endl;
+			cin.clear();
 			}
 		}
 		else if(calccmd == "-")
 		{
-		std::cin >> value1;
-		std::cin >> value2;
-		std::cout << "Result: " << value1 - value2 << std::endl;
-			if(std::cin.fail())
+		cin >> value1;
+		cin >> value2;
+		cout << "Result: " << value1 - value2 << endl;
+			if(cin.fail())
 			{
-			std::cout << "One of the numbers is invalid!" << std::endl;
-			std::cin.clear();
+			cout << "One of the numbers is invalid!" << endl;
+			cin.clear();
 			}
 		}
 		else if(calccmd == "*")
 		{
-		std::cin >> value1;
-		std::cin >> value2;
-		std::cout << "Result: " <<  value1 * value2 << std::endl;
-			if(std::cin.fail())
+		cin >> value1;
+		cin >> value2;
+		cout << "Result: " <<  value1 * value2 << endl;
+			if(cin.fail())
 			{
-			std::cout << "One of the numbers is invalid!" << std::endl;
-			std::cin.clear();
+			cout << "One of the numbers is invalid!" << endl;
+			cin.clear();
 			}
 		}
 		else if(calccmd == "/")
 		{
-		std::cin >> value1;
-		std::cin >> value2;
-		std::cout << "Result: " << value1 / value2 << std::endl;
-			if(std::cin.fail())
+		cin >> value1;
+		cin >> value2;
+		cout << "Result: " << value1 / value2 << endl;
+			if(cin.fail())
 			{
-			std::cout << "One of the numbers is invalid!" << std::endl;
-			std::cin.clear();
+			cout << "One of the numbers is invalid!" << endl;
+			cin.clear();
 			}
 		}
+
+		else if(calccmd == "^" || calccmd == "pow")
+		{
+		cin >> value1;
+		cin >> value2;
+		cout << "Result: " << pow(value1, value2) << endl;
+		}
+
 		else if(calccmd == "help")
 		{
-			std::cout << "Calculator operators: +, -, *, /" << std::endl;
-			std::cout << "Example of calculator usage: If you type: '+ 20 10' the return will be 30, if you type: '- 20 10' the return will be 10." << std::endl;
+			cout << "Calculator operators: +, -, *, /" << endl;
+			cout << "Example of calculator usage: If you type: '+ 20 10' the return will be 30, if you type: '- 20 10' the return will be 10." << endl;
 		}
+
 		else if(calccmd == "exit")
 			return false;
 		else
 		{
-		std::cout << "Wrong calculator command! Type 'help' to see how to use it!" << std::endl;
+		cout << "Wrong calculator command! Type 'help' to see how to use it!" << endl;
 		}
 	}
 }
