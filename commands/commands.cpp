@@ -3,3 +3,5 @@
 #include "help.cpp"
 #include "about.cpp"
 #include "calculator.cpp"
+#include "version.cpp"
+#include "credits.cpp"
