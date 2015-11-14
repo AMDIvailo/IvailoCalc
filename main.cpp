@@ -31,6 +31,11 @@ string command;
 				int time;
 				int currtime;
 				cin >> time;
+				if(cin.fail())
+				{
+				cout << "One of the numbers is invalid!" << endl;
+				cin.clear();
+				}
 				cout << "Timer started!" << endl;
 					while(currtime <= time)
 					{
