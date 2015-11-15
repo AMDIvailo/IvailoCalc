@@ -16,9 +16,12 @@ This is project, created to improve c++ skills. Made from c++ beginner.
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 To compile on linux:
-    type "make"
-    Thats it the binaries are under bin folder.
+    Type "make".
+    
+    Thats it the binaries are under the bin folder.
+    
     Type "make clean" if you want to remove the binaries.
     
 To compile on Windows:
+    
     Compile the "main.cpp" file with visual studio(Not tested!).
